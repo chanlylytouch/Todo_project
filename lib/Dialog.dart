@@ -19,7 +19,12 @@ class NewDialog extends StatelessWidget {
           child: Text('Add New'),
           onPressed: () {
             final todo = new Todo(title: controller.value.text);
-            controller.clear();
+            if(controller.value.text == ""){
+              print("");
+              controller.clear();
+            }else{
+              
+            }
             Navigator.of(context).pop(todo);
           },
         ),

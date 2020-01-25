@@ -34,7 +34,7 @@ class _TodoListState extends State<TodoList> {
       },
     );
     if(todo != null){
-      setState(() {
+       setState(() {
        todos.add(todo); 
       });
     }
